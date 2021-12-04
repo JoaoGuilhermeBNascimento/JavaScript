@@ -1,0 +1,21 @@
+body {
+    background: dimgrey;
+}
+input {
+    font: normal 18pt Arial;
+    width: 100px;
+    
+}
+div#res {
+    margin-top: 20px;
+    font: normal 16pt Arial;
+}
+div#area {
+    font: normal 15pt Arial;
+    background: rgb(13, 4, 131);
+    color: rgb(218, 218, 218);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}

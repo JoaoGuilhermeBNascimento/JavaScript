@@ -1,0 +1,171 @@
+client x server
+Js é uma tecnologia client Side, mas funciona em servidor
+estamos pegando dados do youtube para acessar o curso
+
+
+ecma script - É a padronização do Js
+
+posso omitir o window de window.alert
+
+// para comentários, como uma única linha
+
+/*
+Para comentários de várias linhas 
+*/
+No JavaScript moderno, além de utilizar a palavra *var*, também podemos usar a palavra let
+Identificadores 
+        Podem começar com letra, $ ou _
+        Não podem começar com números
+        É possível usar letras ou numeros
+        É possível usar acentos e símbolos
+        Não podem conter espaço
+        Não podem ser palavras reservadas
+Dicas
+        Maiúsculas e minúsculuas fazem diferença
+        Tente escolher nomes coerentes para as variáveis
+        JavaScript não diferencia numeros inteiros e reais (int e float)
+        Dentro de Number:
+                infinity
+                NaN
+String --> Número
+(convertendo)
+        Number.parseint(n)
+        Number.parseFloat(n)
+        Number(n) (Use essa)
+
+Numero --> String
+Para converter de número para string 
+        String(n)
+        n.toString()
+
+Para usar o place holder ${} é preciso usar crase***
+
+s.length = para saber quantos caracteres a string tem
+
+s.toUpperCase() = transformar tudo para Maiúsculas
+
+s.toLowerCase() = transforma tudo para minúsculuas
+        <br/> quebra de linha dentro do JS é <br/> diferente do python que é end='' or \n
+Variações para número 
+         n1 = 1545.5
+         n1.toFixed(2) para definir 2 casas decimais
+         n1.toFixed(2).replace('.',',')
+         Para conversões podemos usar 
+         n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+        'R$ 1.545,50'
+        > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})
+        'US$ 1.545,50'
+        > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'})
+        '€ 1.545,50'
+        = recebe
+        == igualdade
+        = = = Três operadores de igual testa se são identicos
+        +  adição
+        -  subtração
+        *  Multiplicação
+        /  divisão 
+        %  resto da divisão inteira
+        ** potência
+Ordem de Precedência
+        ()
+        **
+        * / %
+        + -
+        > < >= <=
+        !
+        &&
+        ||
+
+x = x +1 Simplificando... x++
+x = x - 1 Simplificando... x -- 
+
+Lógicos(A ordem de execução não, e , ou)
+        !  = negação
+        && = conjunção (e) Só satisfaz quando as 2 forem verdadeiras 
+        || = disjunção (ou) Basta que um seja verdadeiro para que seja TRUE
+
+primeiro os operadores aritmeticos depois os operadores lógicos 
+Operador Ternário
+         media >= 7.0 ? "Aprovado": "Reprovado"
+         
+         caso a media seja maior ou igual a 7, seria retornado um true, trazendo consigo um resultado de Aprovado.
+         Caso contrário, iria apresentar Reprovado
+
+DOM - Document Object Model
+    Importante fazer a Árovre DOM
+
+    window com três objetos :
+        location
+        document
+            aqui dentro fica a html
+                head
+                    meta 
+                    title
+                body
+                    h1
+                    p
+                    p
+                        strong
+                    div
+
+        history
+
+indow.document.write(window.document.URL) // window.navegator.appName
+
+Há diversos métodos de acesso:
+    Por marca:
+    getElementsByTagName() consigo selecionar varios objetos, como as 2 tag p
+
+    p1.style.color = 'black'
+        corpo.style.background = 'white'
+
+    Por ID:
+    getElementsbyId()
+        //d.innerText = 'Estou aguardando..'
+                // ambas resultam no mesmo.
+        //window.document.getElementById('msg').innerText = 'olá'
+
+    Por nome:
+    getElementsByName()
+            var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'
+    
+    Por Classe:
+    getElementsByClassName()
+
+    Por seletor:
+        querySelector()
+            ex:
+                <div id ="msg" >Clique Aqui</div>
+               var d = window.document.querySelector(`div#msg`)
+        d.style.background = 'green' 
+
+Eventos
+     <div> 
+     eventos de mouse:
+     enquanto o mouse estiver dentro da div ele ira identificar as ações abaixo . 
+     mouseenter mousemove mousedown mouseup click mouseout
+
+     Funções:
+     bloco só ocorre quando eu clicar dentro da div, por exemplo.
+      O bloco deve vir dentro de chaves function ação(pode colocar parametros aqui){
+          bloco 
+      }
+        é obrigatório utilizar o break no switch
+      switch (expressão) {
+          case valor1:
+
+            break
+          case valor 2:
+
+            break
+          case valor  3:
+
+
+            break
+          default:
+
+
+            break
+
+      }
